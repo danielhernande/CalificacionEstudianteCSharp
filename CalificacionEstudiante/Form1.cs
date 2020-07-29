@@ -42,5 +42,18 @@ namespace CalificacionEstudiante
             label6.Visible = true;
             lblResultado.Visible = true;
         }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+
+            txtNota1.Text = String.Empty;
+            txtNota2.Text = String.Empty;
+            txtNota3.Text = String.Empty;
+            txtNota4.Text = String.Empty;
+
+            label6.Visible = false;
+            lblResultado.Visible = false;
+            txtNota1.Focus();
+        }
     }
 }
